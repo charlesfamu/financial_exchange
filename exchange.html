@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Financial Exchange</title>
+   <link rel="stylesheet" type="text/css" href="styles/exchange.css">
+</head>
+  <body>
+    <h3>Exchange Data</h3>
+    <div class="exchange-table">
+      <div class="row header">
+        <div class="col">Ticker</div>
+        <div  class="col">Trade Volume</div>
+      </div>
+      <div class="table-contents"></div>
+    </div>
+    <div class="default-message">
+      <p>Please insert data to display the table</p>
+    </div>
+    <h3>Insert Data</h3>
+    <form class="insert-data-form">
+      <div class="ticker">
+        <label>Ticker</label>
+        <input type="text" name="ticker" class="ticker-val">
+      </div>
+      <div class="volume">
+        <label>Volume</label>
+        <input type="text" name="volume" class="volume-val">
+      </div>
+    </form>
+    <button type="submit" class="insert-data">Submit</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore.js"></script>
+    <script src="main.js"></script>
+    <script>
+      $(window).load(function () {
+        // Instantiate App constructor with name of database
+        // creates empty array in localStorage called ticker
+        var app = new App("ticker");
+      })
+    </script>
+  </body>
+</html>

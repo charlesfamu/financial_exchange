@@ -1,0 +1,57 @@
+h3 {
+  margin-bottom: 5px;
+}
+.header {
+    background-color: #ccc;
+    font-weight: 600;
+}
+.exchange-table {
+    display: table;         
+    width: auto;         
+    border: 1px solid black;
+    border-right: none;
+}
+.row {
+    display: table-row;
+    width: auto;
+    clear: both;
+}
+.col {
+    float: left;
+    display: table-column;         
+    width: 200px;
+    border-right: 1px solid black;
+    padding: 2px 1px 0 2px;
+}
+
+.table-contents .col {
+  border-top: 1px solid black;
+}
+
+.insert-data-form label {
+    display: inline-block;
+    width: 200px;
+}
+
+.insert-data-form input {
+  display: inline-block;
+  width: 200px;
+}
+
+form {
+  margin-bottom: 0.5em;
+}
+
+button.insert-data {
+  width: 200px;
+  padding: 0;
+  border: none;
+  margin-left: 204px;
+  margin-top: 5px;
+  height: 20px;
+  text-align: left;
+  padding-left: 4px;
+  font-weight: 600;
+  background-color: royalblue;
+  color: white;
+}
